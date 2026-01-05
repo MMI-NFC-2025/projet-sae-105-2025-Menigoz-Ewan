@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film - Anning Coast</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="../assets/img/logo.svg" alt="Logo" class="header__logo-img">
+            </a>
+
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="chercheuse.html" class="nav__link">La chercheuse</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="theorie.html" class="nav__link">Sa théorie</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../en/index.html" class="nav__link nav__link--lang">ENG</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="header__menu-btn" aria-label="Menu">
+                <span class="menu-btn__line"></span>
+                <span class="menu-btn__line"></span>
+                <span class="menu-btn__line"></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="film-hero">
+        <div class="film-hero__background">
+            <img src="../assets/img/hero-film.avif" alt="Cinema de nuit" class="film-hero__image">
+        </div>
+        <div class="film-hero__content">
+            <h1 class="film-hero__title">Film</h1>
+        </div>
+    </section>
+
+    <section class="film-section">
+        <div class="film-section__container">
+            <h2 class="film-section__title">Creation (2009) de Jon Amiel</h2>
+
+            <article class="film-card">
+                <div class="film-card__block">
+                    <h3 class="film-card__subtitle">Synopsis</h3>
+                    <p class="film-card__text">
+                        Ce film biographique retrace les tourments de Charles Darwin alors qu'il travaille sur
+                        "L'Origine des especes". Il evoque ses decouvertes scientifiques revolutionnaires et ses
+                        convictions religieuses.
+                    </p>
+                </div>
+
+                <div class="film-card__block">
+                    <h3 class="film-card__subtitle">Casting</h3>
+                    <p class="film-card__text">
+                        Paul Bettany (Charles Darwin)<br>
+                        Jennifer Connelly (Emma Darwin)
+                    </p>
+                </div>
+
+                <div class="film-card__block">
+                    <h3 class="film-card__subtitle">Lien avec Mary Anning</h3>
+                    <p class="film-card__text">
+                        Les decouvertes fossiles de Mary Anning ont joue un role crucial dans l'elaboration de la
+                        theorie de Darwin sur l'evolution et l'extinction des especes.
+                    </p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="film-excerpt">
+        <div class="film-excerpt__container">
+            <h2 class="film-excerpt__title">Extrait du film</h2>
+
+            <div class="film-excerpt__player">
+                <video class="film-excerpt__video" controls poster="../assets/img/film-extrait-poster.jpg">
+                    <source src="../assets/video/creation-extrait.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la lecture vidéo HTML5.
+                </video>
+            </div>
+
+            <p class="film-excerpt__description">
+                Scenes ou Darwin confronte ses decouvertes scientifiques a ses doutes personnels, illustrant le conflit
+                entre science et religion au XIXe siecle.
+            </p>
+
+            <a href="#" class="film-excerpt__cta">
+                <span class="film-excerpt__cta-text">Voir la bande annonce</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="film-related">
+        <div class="film-related__container">
+            <h2 class="film-related__title">Films corrélés</h2>
+
+            <div class="film-related__grid">
+                <article class="related-film-card related-film-card--blue">
+                    <div class="related-film-card__content">
+                        <h3 class="related-film-card__year">2020</h3>
+                        <h4 class="related-film-card__title">Ammonite</h4>
+                        <p class="related-film-card__type">Drama romantique sur Mary Anning avec Charlotte Rampling</p>
+                    </div>
+                    <div class="related-film-card__image-wrapper">
+                        <img src="../assets/img/film-ammonite.jpg" alt="Affiche du film Ammonite"
+                            class="related-film-card__image">
+                    </div>
+                    <a href="#" class="related-film-card__link" aria-label="En savoir plus sur Ammonite">
+                        <img src="../assets/img/iconhyperlien.svg" alt="Icône lien"
+                            class="related-film-card__link-icon">
+                    </a>
+                </article>
+
+                <article class="related-film-card related-film-card--green">
+                    <div class="related-film-card__content">
+                        <h3 class="related-film-card__year">2016</h3>
+                        <h4 class="related-film-card__title">Hidden Figures</h4>
+                        <p class="related-film-card__type">Femmes scientifiques afro-americaines a la NASA</p>
+                    </div>
+                    <div class="related-film-card__image-wrapper">
+                        <img src="../assets/img/film-hidden-figures.jpg" alt="Affiche du film Hidden Figures"
+                            class="related-film-card__image">
+                    </div>
+                    <a href="#" class="related-film-card__link" aria-label="En savoir plus sur Hidden Figures">
+                        <img src="../assets/img/iconhyperlien.svg" alt="Icône lien"
+                            class="related-film-card__link-icon">
+                    </a>
+                </article>
+
+                <article class="related-film-card related-film-card--orange">
+                    <div class="related-film-card__content">
+                        <h3 class="related-film-card__year">2019</h3>
+                        <h4 class="related-film-card__title">Radioactive</h4>
+                        <p class="related-film-card__type">Biographie de Marie Curie</p>
+                    </div>
+                    <div class="related-film-card__image-wrapper">
+                        <img src="../assets/img/film-radioactive.jpg" alt="Affiche du film Radioactive"
+                            class="related-film-card__image">
+                    </div>
+                    <a href="#" class="related-film-card__link" aria-label="En savoir plus sur Radioactive">
+                        <img src="../assets/img/iconhyperlien.svg" alt="Icône lien"
+                            class="related-film-card__link-icon">
+                    </a>
+                </article>
+
+                <article class="related-film-card related-film-card--teal">
+                    <div class="related-film-card__content">
+                        <h3 class="related-film-card__year">2014</h3>
+                        <h4 class="related-film-card__title">The Theory of Everything</h4>
+                        <p class="related-film-card__type">Sur Stephen Hawking et Jane Wilde</p>
+                    </div>
+                    <div class="related-film-card__image-wrapper">
+                        <img src="../assets/img/film-theory-everything.jpg"
+                            alt="Affiche du film The Theory of Everything" class="related-film-card__image">
+                    </div>
+                    <a href="#" class="related-film-card__link"
+                        aria-label="En savoir plus sur The Theory of Everything">
+                        <img src="../assets/img/iconhyperlien.svg" alt="Icône lien"
+                            class="related-film-card__link-icon">
+                    </a>
+                </article>
+            </div>
+
+            <p class="film-related__description">
+                Ces oeuvres cinematographiques celebrent la reconnaissance des femmes scientifiques et la lutte qu'elles
+                ont menee pour faire reconnaitre leurs contributions historiques.
+            </p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo">
+                <a href="index.html" class="footer__logo-link">
+                    <img src="../assets/img/logo.svg" alt="Logo" class="footer__logo-img">
+                </a>
+            </div>
+
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a href="projets.html" class="footer__nav-link">Autres projets</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="glossaire.html" class="footer__nav-link">Glossaire</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="contacts.html" class="footer__nav-link">Contacts</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="a-propos.html" class="footer__nav-link">À propos</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="footer__legal">
+                <h3 class="footer__legal-title">Mention légale</h3>
+                <p class="footer__legal-text">
+                    Projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMI de Montbéliard
+                </p>
+            </div>
+
+            <div class="footer__contact">
+                <h3 class="footer__contact-title">Contact</h3>
+                <div class="footer__contact-info">
+                    <p class="footer__contact-name">MENIGOZ Ewan</p>
+                    <p class="footer__contact-group">Groupe B1</p>
+                    <a href="mailto:emenigoz2@edu.univ-fcomte.fr"
+                        class="footer__contact-email">emenigoz2@edu.univ-fcomte.fr</a>
+                </div>
+            </div>
+
+            <div class="footer__social">
+                <h3 class="footer__social-title">Nous suivre</h3>
+                <div class="footer__social-links">
+                    <img src="../assets/img/iconfacebook.svg" alt="Facebook" class="footer__social-icon">
+                    <img src="../assets/img/iconx.svg" alt="Twitter" class="footer__social-icon">
+                    <img src="../assets/img/iconinsta.svg" alt="Instagram" class="footer__social-icon">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
