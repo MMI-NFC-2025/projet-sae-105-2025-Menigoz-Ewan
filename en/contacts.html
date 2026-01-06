@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Anning Coast</title>
+    <title>Contacts - Anning Coast</title>
     <link rel="stylesheet" href="../src/css/style.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
                         <a href="theory.html" class="nav__link">Her Theory</a>
                     </li>
                     <li class="nav__item">
-                        <a href="../fr/index.html" class="nav__link nav__link--lang">FR</a>
+                        <a href="../fr/contacts.html" class="nav__link nav__link--lang">FR</a>
                     </li>
                 </ul>
             </nav>
@@ -35,59 +35,56 @@
         </div>
     </header>
 
-    <section class="apropos-hero">
-        <div class="apropos-hero__background">
-            <div class="apropos-hero__overlay"></div>
+    <section class="contacts-hero">
+        <div class="contacts-hero__background">
+            <div class="contacts-hero__overlay"></div>
         </div>
-        <div class="apropos-hero__content">
-            <h1 class="apropos-hero__title">About</h1>
-        </div>
-    </section>
-
-    <section class="apropos-project">
-        <div class="apropos-project__container">
-            <h2 class="apropos-project__title">Our Project</h2>
-            
-            <div class="apropos-project__card">
-                <p class="apropos-project__text">
-                    This website is an educational project dedicated to raising awareness of the Matilda Effect and to recognizing Mary Anning, a pioneer in paleontology whose contributions were long minimized.
-                </p>
-                <p class="apropos-project__text">
-                    Created in 2025, this project aims to make visible the work of women scientists erased from history, and to inspire new generations to pursue their scientific passions without barriers, limits, or constraints.
-                </p>
-                <p class="apropos-project__text">
-                    We believe that acknowledging the past is essential to building a fairer future in the field of science.
-                </p>
-            </div>
+        <div class="contacts-hero__content">
+            <h1 class="contacts-hero__title">Contacts</h1>
         </div>
     </section>
 
-    <section class="apropos-mission">
-        <div class="apropos-mission__container">
-            <h2 class="apropos-mission__title">Our Mission</h2>
-            
-            <div class="apropos-mission__grid">
-                <div class="mission-card">
-                    <h3 class="mission-card__title">Educate</h3>
-                    <p class="mission-card__text">
-                        Inform the public about the Matilda Effect and its consequences on the history of science
-                    </p>
-                </div>
+    <section class="contacts-intro">
+        <div class="contacts-intro__container">
+            <p class="contacts-intro__description">
+                Do you have questions about the Matilda Effect or Mary Anning?
+            </p>
+            <p class="contacts-intro__subtitle">
+                Fill out this form to contact us!
+            </p>
+        </div>
+    </section>
 
-                <div class="mission-card">
-                    <h3 class="mission-card__title">Honor</h3>
-                    <p class="mission-card__text">
-                        Pay tribute to Mary Anning and forgotten women scientists
-                    </p>
-                </div>
-
-                <div class="mission-card">
-                    <h3 class="mission-card__title">Inspire</h3>
-                    <p class="mission-card__text">
-                        Encourage diversity and inclusion in scientific fields
-                    </p>
-                </div>
+    <section class="contacts-form">
+        <div class="contacts-form__container">
+            <div class="contacts-form__header">
+                <img src="../assets/img/icon formulaire.svg" alt="" class="contacts-form__icon">
+                <h2 class="contacts-form__title">Contact Form</h2>
             </div>
+
+            <form class="form" method="POST" action="#send">
+                <div class="form__group">
+                    <label for="name" class="form__label">Full Name</label>
+                    <input type="text" id="name" name="name" class="form__input" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="email" class="form__label">Email</label>
+                    <input type="email" id="email" name="email" class="form__input" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="subject" class="form__label">Subject</label>
+                    <input type="text" id="subject" name="subject" class="form__input" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="message" class="form__label">Message</label>
+                    <textarea id="message" name="message" class="form__textarea" rows="8" required></textarea>
+                </div>
+
+                <button type="submit" class="form__submit">Send Message</button>
+            </form>
         </div>
     </section>
 
