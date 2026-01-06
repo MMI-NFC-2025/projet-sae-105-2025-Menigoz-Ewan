@@ -1,7 +1,3 @@
-/* ========================================
-   GLOSSAIRE - Glossary Page Styles
-   ======================================== */
-
 .glossary-terms__grid {
     display: flex;
     flex-direction: column;
