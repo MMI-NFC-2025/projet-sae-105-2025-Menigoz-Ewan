@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts - Anning Coast</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                <img src="../assets/img/logo.svg" alt="Logo" class="header__logo-img">
+            </a>
+    
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="chercheuse.html" class="nav__link">La chercheuse</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="theorie.html" class="nav__link">Sa théorie</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="../en/index.html" class="nav__link nav__link--lang">ENG</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <button class="header__menu-btn" aria-label="Menu">
+                <span class="menu-btn__line"></span>
+                <span class="menu-btn__line"></span>
+                <span class="menu-btn__line"></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="contacts-hero">
+        <div class="contacts-hero__background">
+            <div class="contacts-hero__overlay"></div>
+        </div>
+        <div class="contacts-hero__content">
+            <h1 class="contacts-hero__title">Contacts</h1>
+        </div>
+    </section>
+
+    <section class="contacts-intro">
+        <div class="contacts-intro__container">
+            <p class="contacts-intro__description">
+                Vous avez des questions sur l'effet Matilda ou Mary Anning ?
+            </p>
+            <p class="contacts-intro__subtitle">
+                Remplissez ce formulaire pour nous contacter !
+            </p>
+        </div>
+    </section>
+
+    <section class="contacts-form">
+        <div class="contacts-form__container">
+            <div class="contacts-form__header">
+                <img src="../assets/img/icon formulaire.svg" alt="" class="contacts-form__icon">
+                <h2 class="contacts-form__title">Formulaire de contact</h2>
+            </div>
+
+            <form class="form" method="POST" action="#send">
+                <div class="form__group">
+                    <label for="name" class="form__label">Nom Prénom</label>
+                    <input type="text" id="name" name="name" class="form__input" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="email" class="form__label">Email</label>
+                    <input type="email" id="email" name="email" class="form__input" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="subject" class="form__label">Sujet</label>
+                    <input type="text" id="subject" name="subject" class="form__input" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="message" class="form__label">Message</label>
+                    <textarea id="message" name="message" class="form__textarea" rows="8" required></textarea>
+                </div>
+
+                <button type="submit" class="form__submit">Envoyez le message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo">
+                <a href="index.html" class="footer__logo-link">
+                    <img src="../assets/img/logo.svg" alt="Logo" class="footer__logo-img">
+                </a>
+            </div>
+    
+            <nav class="footer__nav">
+                <ul class="footer__nav-list">
+                    <li class="footer__nav-item">
+                        <a href="projets.html" class="footer__nav-link">Autres projets</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="glossaire.html" class="footer__nav-link">Glossaire</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="contacts.html" class="footer__nav-link">Contacts</a>
+                    </li>
+                    <li class="footer__nav-item">
+                        <a href="a-propos.html" class="footer__nav-link">À propos</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="footer__legal">
+                <h3 class="footer__legal-title">Mention légale</h3>
+                <p class="footer__legal-text">
+                    Projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département MMI de Montbéliard
+                </p>
+            </div>
+    
+            <div class="footer__contact">
+                <h3 class="footer__contact-title">Contact</h3>
+                <div class="footer__contact-info">
+                    <p class="footer__contact-name">MENIGOZ Ewan</p>
+                    <p class="footer__contact-group">Groupe B1</p>
+                    <a href="mailto:emenigoz2@edu.univ-fcomte.fr"
+                        class="footer__contact-email">emenigoz2@edu.univ-fcomte.fr</a>
+                </div>
+            </div>
+    
+            <div class="footer__social">
+                <h3 class="footer__social-title">Nous suivre</h3>
+                <div class="footer__social-links">
+                    <img src="../assets/img/iconfacebook.svg" alt="Facebook" class="footer__social-icon">
+                    <img src="../assets/img/iconx.svg" alt="Twitter" class="footer__social-icon">
+                    <img src="../assets/img/iconinsta.svg" alt="Instagram" class="footer__social-icon">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
