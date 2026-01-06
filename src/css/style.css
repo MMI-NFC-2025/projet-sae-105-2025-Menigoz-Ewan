@@ -3,5 +3,7 @@
 @import url("./layout/footer.css");
 @import url("./layout/header.css");
 @import url("./components/button.css");
+@import url("./components/hero.css");
+@import url("./components/explore.css");
 @import url("./components/menu.css");
 @import url("./utils/variables.css");
