@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding: 60px 16px 80px;
 }
 
 .hero__background {
@@ -28,6 +29,8 @@
     z-index: 2;
     text-align: center;
     max-width: 600px;
+    width: min(640px, 100%);
+    margin: 0 auto;
     padding: 40px 24px;
     display: flex;
     flex-direction: column;
@@ -46,8 +49,9 @@
 
 .hero__dates-square {
     position: absolute;
-    width: 180px;
-    height: 50px;
+    width: 260px;
+    height: 60px;
+    z-index: 1;
 }
 
 .hero__dates-text {
@@ -56,6 +60,8 @@
     font-weight: 600;
     color: #2C2C2C;
     white-space: nowrap;
+    z-index: 2;
+    padding: 0 40px;
 }
 
 /* Title */
@@ -75,11 +81,13 @@
     justify-content: center;
     position: relative;
     max-width: 500px;
+    width: 100%;
 }
 
 .hero__description-square {
     position: absolute;
-    width: 420px;
+    width: 100%;
+    max-width: 420px;
     height: 150px;
 }
 
@@ -93,6 +101,7 @@
     text-align: center;
     margin: 0;
     max-width: 380px;
+    width: 100%;
 }
 
 /* CTA Button */
@@ -112,7 +121,8 @@
 }
 
 .hero__button {
-    width: auto;
+    width: 100%;
+    max-width: 320px;
     height: auto;
 }
 

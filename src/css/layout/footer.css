@@ -11,7 +11,7 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 0px;
 }
 
 /* Logo */
@@ -123,23 +123,24 @@
 
 .footer__social-links {
     display: flex;
-    gap: 16px;
+    gap: 12px;
     align-items: center;
 }
 
 .footer__social-icon {
-    width: 40px;
-    height: 40px;
-    background: #000000;
+    width: 32px;
+    height: 32px;
+    background: #ffffff;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: opacity 0.2s ease;
+    transition: transform 0.2s ease;
+    object-fit: contain;
 }
 
 .footer__social-icon:hover {
-    opacity: 0.7;
+    transform: scale(1.1);
 }
 
 .footer__social-icon img {
@@ -171,12 +172,7 @@
     }
 
     .footer__social-icon {
-        width: 36px;
-        height: 36px;
-    }
-
-    .footer__social-icon img {
-        width: 18px;
-        height: 18px;
+        width: 40px;
+        height: 40px;
     }
 }

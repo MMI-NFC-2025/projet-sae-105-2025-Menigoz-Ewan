@@ -1,8 +1,11 @@
 /* Import Alata font */
 @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
-/* Base styles */
-* {
+/* Global reset */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     font-family: 'Alata', sans-serif;
 }
 
@@ -10,4 +13,19 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Alata', sans-serif;
+    overflow-x: hidden;
+    background-color: #ffffff;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
 }
