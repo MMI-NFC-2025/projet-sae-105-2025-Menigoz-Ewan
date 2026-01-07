@@ -1236,7 +1236,7 @@ a {
 /* Book Context */
 .book-context {
     width: 100%;
-    padding: 6vh 0 20vh 0;
+    padding: 15vh 0 20vh 0;
 }
 
 .book-context__container {
@@ -1246,7 +1246,7 @@ a {
     flex-direction: column;
     gap: 3vh;
     position: relative;
-    padding-top: 10vh;
+    padding-top: 0;
 }
 
 .book-context__title {

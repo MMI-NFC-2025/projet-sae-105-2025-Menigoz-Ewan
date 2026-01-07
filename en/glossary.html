@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Glossary - Anning Coast</title>
-    <link rel="stylesheet" href="../src/css/style.css">
+    <link rel="stylesheet" href="../src/css/style.css?v=20260107">
 </head>
 
 <body>
@@ -16,7 +16,7 @@
             </a>
 
             <div class="header__actions">
-                <a href="../fr/glossaire.html" class="header__lang">FR</a>
+                <a href="../fr/index.html" class="header__lang">FR</a>
 
                 <button class="header__menu-btn" aria-label="Menu">
                     <span class="menu-btn__line"></span>
@@ -24,6 +24,56 @@
                     <span class="menu-btn__line"></span>
                 </button>
             </div>
+        </div>
+
+        <div class="mobile-menu">
+            <div class="mobile-menu__header">
+                <a href="index.html" class="mobile-menu__logo">
+                    <img src="../assets/img/logo.svg" alt="Logo" class="mobile-menu__logo-img">
+                </a>
+                <div class="mobile-menu__actions">
+                    <a href="../fr/index.html" class="mobile-menu__lang">FR</a>
+                    <button class="mobile-menu__close" aria-label="Close menu">
+                        <span class="mobile-menu__close-line"></span>
+                        <span class="mobile-menu__close-line"></span>
+                    </button>
+                </div>
+            </div>
+
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a href="researcher.html" class="mobile-menu__link1">The Researcher</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="literature.html" class="mobile-menu__link1">Women in Science in Literature</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="theory.html" class="mobile-menu__link1">Popularization of Her Theory</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="movie.html" class="mobile-menu__link1">Movie</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="book.html" class="mobile-menu__link1">Book</a>
+                    </li>
+
+
+                    <li class="mobile-menu__item">
+                        <a href="projects.html" class="mobile-menu__link2">Other Projects</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="glossary.html" class="mobile-menu__link2">Glossary</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="contacts.html" class="mobile-menu__link2">Contacts</a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a href="about.html" class="mobile-menu__link2">About</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <section class="glossary-hero">
@@ -50,38 +100,151 @@
     <section class="glossary-terms">
         <div class="glossary-terms__container">
             <div class="glossary-terms__grid">
-                <button class="glossary-term-btn">Comparative Anatomy</button>
-                <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
-                <button class="glossary-term-btn">Coprolites</button>
-                <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
-                <button class="glossary-term-btn">Jurassic Coast</button>
-                <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
-                <button class="glossary-term-btn">Dimorphodon</button>
-                <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
-                <button class="glossary-term-btn">Matilda Effect</button>
-                <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
-                <button class="glossary-term-btn">Extinction</button>
-                <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
-                <button class="glossary-term-btn">Ichthyosaur</button>
-                <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
-                <button class="glossary-term-btn">Jurassic</button>
-                <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
-                <button class="glossary-term-btn">Lyme Regis</button>
-                <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
-                <button class="glossary-term-btn">Paleontology</button>
-                <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
-                <button class="glossary-term-btn">Plesiosaur</button>
-                <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
-                <button class="glossary-term-btn">Pteranodon</button>
-                <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
-                <button class="glossary-term-btn">Pterodactyl</button>
-                <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
-                <button class="glossary-term-btn">Pterosaur</button>
-                <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
-                <button class="glossary-term-btn">Geological Society of London</button>
-                <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
-                <button class="glossary-term-btn">Stratigraphy</button>
-                <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
+                <div class="glossary-item">
+                    <button class="glossary-term-btn">
+                        <span>Comparative Anatomy</span>
+                        <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
+                    </button>
+                    <div class="glossary-item__definition">Study of similarities and differences in the anatomy of
+                        different species, method used by Mary Anning to understand her discoveries.</div>
+                </div>
+
+                <div class="glossary-item">
+                    <button class="glossary-term-btn">
+                        <span>Coprolites</span>
+                        <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
+                    </button>
+                    <div class="glossary-item__definition">Fossilized feces. Mary Anning was one of the first to
+                        correctly identify these fossils and understand their scientific value.</div>
+                </div>
+
+                <div class="glossary-item">
+                    <button class="glossary-term-btn">
+                        <span>Jurassic Coast</span>
+                        <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
+                    </button>
+                    <div class="glossary-item__definition">Section of the Dorset and East Devon coast, UNESCO World
+                        Heritage site, rich in fossils from the Jurassic period.</div>
+                </div>
+
+                <div class="glossary-item">
+                    <button class="glossary-term-btn">
+                        <span>Dimorphodon</span>
+                        <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
+                    </button>
+                    <div class="glossary-item__definition">Fossil genus of pterosaurs, belonging to the Dimorphodontidae
+                        family and living in the Early Jurassic.</div>
+                </div>
+
+                <div class="glossary-item">
+                    <button class="glossary-term-btn">
+                        <span>Matilda Effect</span>
+                        <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
+                    </button>
+                    <div class="glossary-item__definition">Systematic denial or minimization of women scientists'
+                        contributions to research, often attributed to men, named after Matilda Gage.</div>
+                </div>
+
+                <div class="glossary-item">
+                    <button class="glossary-term-btn">
+                        <span>Extinction</span>
+                        <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
+                    </button>
+                    <div class="glossary-item__definition">Complete disappearance of a species. Mary Anning's
+                        discoveries demonstrated that extinction was a real phenomenon.</div>
+                </div>
+
+                <div class="glossary-item">
+                    <button class="glossary-term-btn">
+                        <span>Ichthyosaur</span>
+                        <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
+                    </button>
+                    <div class="glossary-item__definition">Prehistoric marine reptile resembling a dolphin, lived during
+                        the Mesozoic. Mary Anning discovered the first complete skeleton in 1811.</div>
+                </div>
+
+                <div class="glossary-item">
+                    <button class="glossary-term-btn">
+                        <span>Jurassic</span>
+                        <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
+                    </button>
+                    <div class="glossary-item__definition">Geological period spanning from -201 to -145 million years,
+                        during which many species discovered by Mary Anning lived.</div>
+                </div>
+
+                <div class="glossary-item">
+                    <button class="glossary-term-btn">
+                        <span>Lyme Regis</span>
+                        <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
+                    </button>
+                    <div class="glossary-item__definition">Coastal town in Dorset, England, birthplace of Mary Anning
+                        and site of her major discoveries.</div>
+                </div>
+
+                <div class="glossary-item">
+                    <button class="glossary-term-btn">
+                        <span>Paleontology</span>
+                        <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
+                    </button>
+                    <div class="glossary-item__definition">Science that studies living beings that populated the Earth
+                        during geological times, based on the study of fossils.</div>
+                </div>
+
+                <div class="glossary-item">
+                    <button class="glossary-term-btn">
+                        <span>Plesiosaur</span>
+                        <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
+                    </button>
+                    <div class="glossary-item__definition">Prehistoric marine reptile with a long neck and four
+                        flippers, which lived during the Mesozoic. Discovered by Mary Anning in 1823.</div>
+                </div>
+
+                <div class="glossary-item">
+                    <button class="glossary-term-btn">
+                        <span>Pteranodon</span>
+                        <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
+                    </button>
+                    <div class="glossary-item__definition">It is a very large type of Pterosaur from the Late
+                        Cretaceous. It is famous for its large bony crest at the back of the skull and, as its name
+                        suggests, for its toothless beak.</div>
+                </div>
+
+                <div class="glossary-item">
+                    <button class="glossary-term-btn">
+                        <span>Pterodactyl</span>
+                        <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
+                    </button>
+                    <div class="glossary-item__definition">It is a relatively small and late type of Pterosaur from the
+                        Jurassic I. It had long wings and a very long skull and a very short tail. Often incorrectly
+                        used by the general public as a synonym for all Pterosaurs.</div>
+                </div>
+
+                <div class="glossary-item">
+                    <button class="glossary-term-btn">
+                        <span>Pterosaur</span>
+                        <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
+                    </button>
+                    <div class="glossary-item__definition">It encompasses ALL flying reptiles, from the Late Triassic to
+                        the end of the Cretaceous.</div>
+                </div>
+
+                <div class="glossary-item">
+                    <button class="glossary-term-btn">
+                        <span>Geological Society of London</span>
+                        <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
+                    </button>
+                    <div class="glossary-item__definition">Scientific institution founded in 1807, which did not admit
+                        women at the time of Mary Anning. (Geological Society of London)</div>
+                </div>
+
+                <div class="glossary-item">
+                    <button class="glossary-term-btn">
+                        <span>Stratigraphy</span>
+                        <img src="../assets/img/bouton icon glossaire.svg" alt="Arrow" class="glossary-term-btn__icon">
+                    </button>
+                    <div class="glossary-item__definition">Study of the succession of geological layers, allowing
+                        relative dating of fossils.</div>
+                </div>
             </div>
         </div>
     </section>
@@ -139,6 +302,7 @@
         </div>
     </footer>
 
+    <script src="../src/js/main.js?v=20260107"></script>
 </body>
 
 </html>
