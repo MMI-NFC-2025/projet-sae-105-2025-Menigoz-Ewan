@@ -36,6 +36,11 @@ body.film-page {
     background-color: #E8D7CC;
 }
 
+/* Book page background */
+body.book-page {
+    background-color: #E8D7CC;
+}
+
 img {
     max-width: 100%;
     display: block;

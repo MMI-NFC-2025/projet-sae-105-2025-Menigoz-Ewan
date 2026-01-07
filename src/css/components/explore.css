@@ -1,8 +1,9 @@
-/* Explore Section */
+/* Explore Section - Updated 2026 */
 .explore {
     background-color: #E8D7CC;
     padding: 60px 24px;
     width: 100%;
+    overflow: hidden;
 }
 
 .explore__container {
@@ -22,7 +23,7 @@
 .carousel {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 20px;
     position: relative;
     width: 100%;
 }
@@ -30,20 +31,17 @@
 .carousel__wrapper {
     flex: 1;
     overflow: hidden;
-    width: 100%;
 }
 
 .carousel__track {
     display: flex;
-    gap: 12px;
+    gap: 24px;
     transition: transform 0.4s ease;
-    width: fit-content;
 }
 
 .carousel__btn {
     background: #C99872;
     border: none;
-    color: #000000;
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -51,9 +49,8 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 24px;
-    transition: background-color 0.2s ease;
     flex-shrink: 0;
+    transition: background-color 0.2s ease;
 }
 
 .carousel__btn:hover {
@@ -61,8 +58,10 @@
 }
 
 .carousel__arrow {
+    font-size: 24px;
     font-weight: 300;
     line-height: 1;
+    color: #000000;
 }
 
 .carousel__dots {
@@ -70,7 +69,6 @@
     justify-content: center;
     gap: 8px;
     margin-top: 24px;
-    width: 100%;
 }
 
 .carousel__dot {
@@ -78,6 +76,8 @@
     height: 10px;
     border-radius: 50%;
     background-color: rgba(44, 44, 44, 0.3);
+    border: none;
+    padding: 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -90,38 +90,35 @@
 .card {
     border-radius: 24px;
     overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    height: auto;
-    min-width: 280px;
-    max-width: 320px;
+    align-items: center;
+    min-width: 380px;
+    max-width: 380px;
+    flex-shrink: 0;
 }
 
 .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
 .card__link {
     display: flex;
     flex-direction: row;
     text-decoration: none;
-    color: inherit;
-    padding: 0;
-    gap: 0;
     width: 100%;
+    padding: 20px;
+    gap: 16px;
     align-items: center;
 }
 
 .card__image-wrapper {
     flex-shrink: 0;
-    width: 160px;
-    height: 160px;
-    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
     overflow: hidden;
-    margin: 16px;
 }
 
 .card__image {
@@ -135,8 +132,6 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    position: relative;
-    padding: 16px 16px 16px 8px;
 }
 
 .card__content-square {
@@ -148,12 +143,12 @@
     font-weight: 700;
     color: #2C2C2C;
     margin: 0;
-    line-height: 1.2;
+    line-height: 1.3;
 }
 
 .card__description {
     font-size: 14px;
-    line-height: 1.5;
+    line-height: 1.4;
     color: #2C2C2C;
     margin: 0;
 }
@@ -182,69 +177,59 @@
 /* Explore Responsive */
 @media (max-width: 768px) {
     .explore {
-        padding: 40px 16px;
+        padding: 50px 20px;
     }
 
     .explore__title {
         font-size: 28px;
-        margin-bottom: 30px;
+        margin-bottom: 36px;
     }
 
     .carousel__btn {
         width: 40px;
         height: 40px;
+    }
+
+    .carousel__arrow {
         font-size: 20px;
     }
 
     .carousel {
-        gap: 12px;
-    }
-
-    .carousel__track {
         gap: 16px;
     }
 
     .card {
-        min-width: 280px;
-        flex-shrink: 0;
+        min-width: 320px;
+        max-width: 320px;
+    }
+
+    .card__link {
+        padding: 16px;
+        gap: 12px;
     }
 
     .card__image-wrapper {
-        width: 120px;
-        height: 120px;
-        margin: 12px;
-        border-radius: 16px;
-    }
-
-    .card__content {
-        padding: 16px 16px 16px 0;
+        width: 90px;
+        height: 90px;
     }
 
     .card__title {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .card__description {
-        font-size: 12px;
-    }
-
-    .carousel__dots {
-        margin-top: 16px;
-    }
-
-    .carousel__dot {
-        width: 8px;
-        height: 8px;
+        font-size: 13px;
     }
 }
 
 @media (max-width: 480px) {
-    .explore__title {
-        font-size: 24px;
+    .card {
+        min-width: 300px;
+        max-width: 300px;
     }
 
     .card__link {
-        padding: 10px;
+        padding: 14px;
         gap: 10px;
     }
 
@@ -258,35 +243,79 @@
     }
 
     .card__description {
-        font-size: 11px;
+        font-size: 12px;
     }
 }
 
 /* Desktop Layout */
 @media (min-width: 769px) {
-    .explore__cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+    .explore {
+        padding: 80px 40px;
+    }
+
+    .explore__title {
+        font-size: 42px;
+        margin-bottom: 50px;
+    }
+
+    .carousel__btn {
+        width: 56px;
+        height: 56px;
+    }
+
+    .carousel__arrow {
+        font-size: 28px;
+    }
+
+    .carousel {
         gap: 24px;
     }
 
+    .card {
+        min-width: 450px;
+        max-width: 450px;
+    }
+
     .card__link {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
         padding: 24px;
+        gap: 20px;
     }
 
     .card__image-wrapper {
-        width: 160px;
-        height: 160px;
+        width: 120px;
+        height: 120px;
+        border-radius: 20px;
     }
 
     .card__title {
-        font-size: 22px;
+        font-size: 24px;
     }
 
     .card__description {
         font-size: 15px;
     }
+
+    .carousel__dots {
+        margin-top: 32px;
+        gap: 10px;
+    }
+
+    .carousel__dot {
+        width: 12px;
+        height: 12px;
+    }
+}
+}
+
+.card__content {
+    padding: 24px 32px 24px 0;
+}
+
+.card__title {
+    font-size: 26px;
+}
+
+.card__description {
+    font-size: 16px;
+}
 }
