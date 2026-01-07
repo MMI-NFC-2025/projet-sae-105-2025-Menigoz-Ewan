@@ -47,6 +47,140 @@
     margin-left: -2%;
 }
 
+.theory-content {
+    width: 100%;
+    padding: 6vh 0;
+}
+
+.theory-content__container {
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.theory-content__paragraph {
+    font-size: 4vw;
+    line-height: 1.6;
+    color: #2C2C2C;
+    margin: 0;
+    text-align: left;
+    max-width: 85%;
+}
+
+.theory-content__figure {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.theory-content__image {
+    width: 95%;
+    max-width: 100%;
+    border-radius: 3vw;
+    display: block;
+    box-shadow: 0 0 2vw rgba(0, 0, 0, 0.15);
+}
+
+/* Theory Intro Section */
+.theory-intro {
+    width: 100%;
+    padding: 2vh 0 6vh;
+}
+
+.theory-intro__container {
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+.theory-intro__paragraph {
+    font-size: 4vw;
+    line-height: 1.6;
+    color: #2C2C2C;
+    margin: 0;
+    text-align: left;
+    max-width: 85%;
+    padding-left: 4vw;
+}
+
+.theory-intro__figure {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.theory-intro__image {
+    width: 95%;
+    max-width: 100%;
+    border-radius: 3vw;
+    display: block;
+    box-shadow: 0 0 2vw rgba(0, 0, 0, 0.15);
+}
+
+/* Theory Concepts Section */
+.theory-concepts {
+    width: 100%;
+    padding: 8vh 0 6vh;
+}
+
+.theory-concepts__container {
+    width: 92%;
+    margin: 0 auto;
+}
+
+.theory-concepts__title {
+    font-size: 7vw;
+    font-weight: 700;
+    color: #2C2C2C;
+    margin: 0 0 5vh 0;
+    text-align: left;
+}
+
+.theory-concepts__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 4vh;
+}
+
+/* Concept Card */
+.concept-card {
+    border-radius: 4vw;
+    padding: 5vw;
+    margin: 0;
+}
+
+.concept-card:nth-child(odd) {
+    background-color: #B8D9E8;
+}
+
+.concept-card:nth-child(even) {
+    background-color: #C8E6D0;
+}
+
+.concept-card__title {
+    font-size: 4.5vw;
+    font-weight: 700;
+    color: #2C2C2C;
+    margin: 0 0 2vh 0;
+}
+
+.concept-card__text {
+    font-size: 3.5vw;
+    line-height: 1.6;
+    color: #2C2C2C;
+    margin: 0;
+}
+
+.concept-card .theory-concepts__card-decor {
+    display: none;
+}
+
 .impact__quote-text {
     font-size: 3.5vw;
     line-height: 1.6;
@@ -295,6 +429,62 @@
 
 .biography__paragraph {
     font-size: 3.5vw;
+    line-height: 1.6;
+    color: #2C2C2C;
+    margin: 0;
+}
+
+/* Theory Impact Section */
+.theory-impact {
+    width: 100%;
+    padding: 8vh 0 6vh;
+}
+
+.theory-impact__container {
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.theory-impact__title {
+    font-size: 5.5vw;
+    font-weight: 700;
+    color: #2C2C2C;
+    margin: 0 0 2vh 0;
+}
+
+.theory-impact__paragraph {
+    font-size: 3.8vw;
+    line-height: 1.6;
+    color: #2C2C2C;
+    margin: 0;
+}
+
+/* Theory Recognition Section */
+.theory-recognition {
+    width: 100%;
+    padding: 6vh 0;
+}
+
+.theory-recognition__container {
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+.theory-recognition__title {
+    font-size: 5.5vw;
+    font-weight: 700;
+    color: #2C2C2C;
+    margin: 0 0 2vh 0;
+}
+
+.theory-recognition__paragraph {
+    font-size: 3.8vw;
     line-height: 1.6;
     color: #2C2C2C;
     margin: 0;

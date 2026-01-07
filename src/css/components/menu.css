@@ -6,7 +6,7 @@
     width: 100%;
     max-width: 360px;
     height: 100vh;
-    background-color: #C99872;
+    background-color: #BF8564;
     z-index: 999;
     transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     overflow-y: auto;

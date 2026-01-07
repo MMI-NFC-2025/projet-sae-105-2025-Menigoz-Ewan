@@ -21,6 +21,11 @@ body.no-scroll {
     overflow: hidden;
 }
 
+/* Theory page background */
+body.theory-page {
+    background-color: #E8D7CC;
+}
+
 img {
     max-width: 100%;
     display: block;
