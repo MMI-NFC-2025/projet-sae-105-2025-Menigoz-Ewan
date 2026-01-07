@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Women in Science in Literature - Anning Coast</title>
     <link rel="stylesheet" href="../src/css/style.css">
 </head>
-<body>
+
+<body class="literature-page">
     <header class="header">
         <div class="header__container">
             <a href="index.html" class="header__logo">
@@ -44,67 +46,70 @@
         </div>
     </section>
 
-    <section class="books">
+    <section class="books" aria-labelledby="books-title">
         <div class="books__container">
-            <article class="card">
-                <img src="../assets/img/card remarkable.svg" alt="Rectangle card" class="card__square-card">
-                <div class="card__body">
-                    <h3 class="card__title">Remarkable Creatures</h3>
-                    <p class="card__meta">Tracy Chevalier (2009)</p>
-                    <p class="card__description">
-                        Historical novel exploring class and gender barriers through Mary's relationship with Elizabeth Philpot.
-                    </p>
-                </div>
-                <a class="card__link" href="#" aria-label="Open Remarkable Creatures">
-                    <img src="../assets/img/boutonhyperlien.svg" alt="Link icon" class="card__link-icon">
-                    <img src="../assets/img/iconhyperlien.svg" alt="Link icon" class="card__link-icon">
-                </a>
-            </article>
+            <h2 class="books__title" id="books-title">Book selection</h2>
 
-            <article class="card">
-                <img src="../assets/img/card fossil hunter.svg" alt="Rectangle card" class="card__square-card">
-                <div class="card__body">
-                    <h3 class="card__title">The Fossil Hunter</h3>
-                    <p class="card__meta">Shelley Emling (2009)</p>
-                    <p class="card__description">
-                        Factual biography detailing her expertise, discoveries, and difficult life.
-                    </p>
-                </div>
-                <a class="card__link" href="#" aria-label="Open The Fossil Hunter">
-                    <img src="../assets/img/boutonhyperlien.svg" alt="Link icon" class="card__link-icon">
-                    <img src="../assets/img/iconhyperlien.svg" alt="Link icon" class="card__link-icon">
-                </a>
-            </article>
+            <div class="carousel books-carousel" aria-label="Book carousel">
+                <button class="carousel__btn carousel__btn--prev" aria-label="View previous book">
+                    <span class="carousel__arrow">‹</span>
+                </button>
 
-            <article class="card">
-                <img src="../assets/img/card stone gril.svg" alt="Rectangle card" class="card__square-card">
-                <div class="card__body">
-                    <h3 class="card__title">Stone Girl, Bone Girl</h3>
-                    <p class="card__meta">Laurence Anholt (1999)</p>
-                    <p class="card__description">
-                        Children's book about Mary Anning.
-                    </p>
-                </div>
-                <a class="card__link" href="#" aria-label="Open Stone Girl, Bone Girl">
-                    <img src="../assets/img/boutonhyperlien.svg" alt="Link icon" class="card__link-icon">
-                    <img src="../assets/img/iconhyperlien.svg" alt="Link icon" class="card__link-icon">
-                </a>
-            </article>
+                <div class="carousel__wrapper">
+                    <div class="carousel__track">
+                        <article class="book-card book-card--sand">
+                            <h3 class="book-card__title">Remarkable Creatures</h3>
+                            <p class="book-card__meta">Tracy Chevalier (2009)</p>
+                            <p class="book-card__description">
+                                Historical novel exploring class and gender barriers through Mary's relationship with
+                                Elizabeth Philpot.
+                            </p>
+                            <a class="book-card__link" href="#" aria-label="Open Remarkable Creatures">
+                                <img src="../assets/img/iconhyperlien.svg" alt="Link icon" class="book-card__link-icon">
+                            </a>
+                        </article>
 
-            <article class="card">
-                <img src="../assets/img/card dragon.svg" alt="Rectangle card" class="card__square-card">
-                <div class="card__body">
-                    <h3 class="card__title">The Dragon in the Cliff</h3>
-                    <p class="card__meta">Sheila Cole (1991)</p>
-                    <p class="card__description">
-                        Youth fiction based on her life.
-                    </p>
+                        <article class="book-card book-card--blue">
+                            <h3 class="book-card__title">The Fossil Hunter</h3>
+                            <p class="book-card__meta">Shelley Emling (2009)</p>
+                            <p class="book-card__description">
+                                Factual biography detailing her expertise, discoveries, and difficult life.
+                            </p>
+                            <a class="book-card__link" href="#" aria-label="Open The Fossil Hunter">
+                                <img src="../assets/img/iconhyperlien.svg" alt="Link icon" class="book-card__link-icon">
+                            </a>
+                        </article>
+
+                        <article class="book-card book-card--green">
+                            <h3 class="book-card__title">Stone Girl, Bone Girl</h3>
+                            <p class="book-card__meta">Laurence Anholt (1999)</p>
+                            <p class="book-card__description">
+                                Children's book about Mary Anning.
+                            </p>
+                            <a class="book-card__link" href="#" aria-label="Open Stone Girl, Bone Girl">
+                                <img src="../assets/img/iconhyperlien.svg" alt="Link icon" class="book-card__link-icon">
+                            </a>
+                        </article>
+
+                        <article class="book-card book-card--steel">
+                            <h3 class="book-card__title">The Dragon in the Cliff</h3>
+                            <p class="book-card__meta">Sheila Cole (1991)</p>
+                            <p class="book-card__description">
+                                Youth fiction based on her life.
+                            </p>
+                            <a class="book-card__link" href="#" aria-label="Open The Dragon in the Cliff">
+                                <img src="../assets/img/iconhyperlien.svg" alt="Link icon" class="book-card__link-icon">
+                            </a>
+                        </article>
+                    </div>
                 </div>
-                <a class="card__link" href="#" aria-label="Open The Dragon in the Cliff">
-                    <img src="../assets/img/boutonhyperlien.svg" alt="Link icon" class="card__link-icon">
-                    <img src="../assets/img/iconhyperlien.svg" alt="Link icon" class="card__link-icon">
-                </a>
-            </article>
+
+                <button class="carousel__btn carousel__btn--next" aria-label="View next book">
+                    <span class="carousel__arrow">›</span>
+                </button>
+            </div>
+
+            <div class="carousel__dots"></div>
         </div>
     </section>
 
@@ -116,7 +121,8 @@
                 <article class="theme-card">
                     <h3 class="theme-card__title">Recognition of female scientists</h3>
                     <p class="theme-card__text">
-                        These books restore the visibility of women whose names have been erased from the history of science.
+                        These books restore the visibility of women whose names have been erased from the history of
+                        science.
                     </p>
                 </article>
 
@@ -130,7 +136,8 @@
                 <article class="theme-card">
                     <h3 class="theme-card__title">Inspiration for new generations</h3>
                     <p class="theme-card__text">
-                        By highlighting the journeys of these women, these works encourage girls to pursue scientific careers.
+                        By highlighting the journeys of these women, these works encourage girls to pursue scientific
+                        careers.
                     </p>
                 </article>
             </div>
@@ -227,5 +234,7 @@
             </div>
         </div>
     </footer>
+    <script src="../src/js/main.js"></script>
 </body>
+
 </html>

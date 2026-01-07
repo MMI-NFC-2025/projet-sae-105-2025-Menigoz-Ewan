@@ -26,6 +26,16 @@ body.theory-page {
     background-color: #E8D7CC;
 }
 
+/* Literature page background */
+body.literature-page {
+    background-color: #E8D7CC;
+}
+
+/* Film page background */
+body.film-page {
+    background-color: #E8D7CC;
+}
+
 img {
     max-width: 100%;
     display: block;

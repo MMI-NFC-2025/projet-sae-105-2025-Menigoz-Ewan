@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../src/css/style.css">
 </head>
 
-<body>
+<body class="literature-page">
     <header class="header">
         <div class="header__container">
             <a href="index.html" class="header__logo">
@@ -76,7 +76,7 @@
         </div>
     </header>
 
-    <section class="hero">
+    <section class="hero literature-hero">
         <div class="hero__background">
             <img src="../assets/img/hero litterature.avif" alt="Livres ouverts et documents anciens"
                 class="hero__image">
@@ -100,68 +100,75 @@
         </div>
     </main>
 
-    <section class="books">
+    <section class="books" aria-labelledby="books-title">
         <div class="books__container">
-            <article class="card">
-                <img src="../assets/img/card remarkable.svg" alt="Rectangle card" class="card__square-card">
-                <div class="card__body">
-                    <h3 class="card__title">Remarkable Creatures</h3>
-                    <p class="card__meta">Tracy Chevalier (2009)</p>
-                    <p class="card__description">
-                        Roman historique explorant les barrières de classe et de genre à travers la relation de Mary
-                        avec Elizabeth Philpot.
-                    </p>
-                </div>
-                <a class="card__link" href="#" aria-label="Ouvrir Remarkable Creatures">
-                    <img src="../assets/img/boutonhyperlien.svg" alt="Icône lien" class="card__link-icon">
-                    <img src="../assets/img/iconhyperlien.svg" alt="Icône lien" class="card__link-icon">
-                </a>
-            </article>
+            <h2 class="books__title" id="books-title">Sélection d'ouvrages</h2>
 
-            <article class="card">
-                <img src="../assets/img/card fossil hunter.svg" alt="Rectangle card" class="card__square-card">
-                <div class="card__body">
-                    <h3 class="lard__title">The Fossil Hunter</h3>
-                    <p class="card__meta">Shelley Emling (2009)</p>
-                    <p class="card__description">
-                        Biographie factuelle détaillant son expertise, ses découvertes et sa vie difficile.
-                    </p>
-                </div>
-                <a class="card__link" href="#" aria-label="Ouvrir The Fossil Hunter">
-                    <img src="../assets/img/boutonhyperlien.svg" alt="Icône lien" class="card__link-icon">
-                    <img src="../assets/img/iconhyperlien.svg" alt="Icône lien" class="card__link-icon">
-                </a>
-            </article>
+            <div class="carousel books-carousel" aria-label="Carrousel des livres">
+                <button class="carousel__btn carousel__btn--prev" aria-label="Voir le livre précédent">
+                    <span class="carousel__arrow">‹</span>
+                </button>
 
-            <article class="card">
-                <img src="../assets/img/card stone gril.svg" alt="Rectangle card" class="card__square-card">
-                <div class="card__body">
-                    <h3 class="card__title">Stone Girl, Bone Girl</h3>
-                    <p class="card__meta">Laurence Anholt (1999)</p>
-                    <p class="card__description">
-                        Livre pour enfants sur Mary Anning.
-                    </p>
-                </div>
-                <a class="card__link" href="#" aria-label="Ouvrir Stone Girl, Bone Girl">
-                    <img src="../assets/img/boutonhyperlien.svg" alt="Icône lien" class="card__link-icon">
-                    <img src="../assets/img/iconhyperlien.svg" alt="Icône lien" class="card__link-icon">
-                </a>
-            </article>
+                <div class="carousel__wrapper">
+                    <div class="carousel__track">
+                        <article class="book-card book-card--sand">
+                            <h3 class="book-card__title">Remarkable Creatures</h3>
+                            <p class="book-card__meta">Tracy Chevalier (2009)</p>
+                            <p class="book-card__description">
+                                Roman historique explorant les barrières de classe et de genre à travers la relation de
+                                Mary
+                                avec Elizabeth Philpot.
+                            </p>
+                            <a class="book-card__link" href="#" aria-label="Ouvrir Remarkable Creatures">
+                                <img src="../assets/img/iconhyperlien.svg" alt="Icône lien"
+                                    class="book-card__link-icon">
+                            </a>
+                        </article>
 
-            <article class="card">
-                <img src="../assets/img/card dragon.svg" alt="Rectangle card" class="card__square-card">
-                <div class="card__body">
-                    <h3 class="card__title">The Dragon in the Cliff</h3>
-                    <p class="card__meta">Sheila Cole (1991)</p>
-                    <p class="card__description">
-                        Fiction jeunesse basée sur sa vie.
-                    </p>
+                        <article class="book-card book-card--blue">
+                            <h3 class="book-card__title">The Fossil Hunter</h3>
+                            <p class="book-card__meta">Shelley Emling (2009)</p>
+                            <p class="book-card__description">
+                                Biographie factuelle détaillant son expertise, ses découvertes et sa vie difficile.
+                            </p>
+                            <a class="book-card__link" href="#" aria-label="Ouvrir The Fossil Hunter">
+                                <img src="../assets/img/iconhyperlien.svg" alt="Icône lien"
+                                    class="book-card__link-icon">
+                            </a>
+                        </article>
+
+                        <article class="book-card book-card--green">
+                            <h3 class="book-card__title">Stone Girl, Bone Girl</h3>
+                            <p class="book-card__meta">Laurence Anholt (1999)</p>
+                            <p class="book-card__description">
+                                Livre pour enfants sur Mary Anning.
+                            </p>
+                            <a class="book-card__link" href="#" aria-label="Ouvrir Stone Girl, Bone Girl">
+                                <img src="../assets/img/iconhyperlien.svg" alt="Icône lien"
+                                    class="book-card__link-icon">
+                            </a>
+                        </article>
+
+                        <article class="book-card book-card--steel">
+                            <h3 class="book-card__title">The Dragon in the Cliff</h3>
+                            <p class="book-card__meta">Sheila Cole (1991)</p>
+                            <p class="book-card__description">
+                                Fiction jeunesse basée sur sa vie.
+                            </p>
+                            <a class="book-card__link" href="#" aria-label="Ouvrir The Dragon in the Cliff">
+                                <img src="../assets/img/iconhyperlien.svg" alt="Icône lien"
+                                    class="book-card__link-icon">
+                            </a>
+                        </article>
+                    </div>
                 </div>
-                <a class="card__link" href="#" aria-label="Ouvrir The Dragon in the Cliff">
-                    <img src="../assets/img/boutonhyperlien.svg" alt="Icône lien" class="card__link-icon">
-                    <img src="../assets/img/iconhyperlien.svg" alt="Icône lien" class="card__link-icon">
-                </a>
-            </article>
+
+                <button class="carousel__btn carousel__btn--next" aria-label="Voir le livre suivant">
+                    <span class="carousel__arrow">›</span>
+                </button>
+            </div>
+
+            <div class="carousel__dots"></div>
         </div>
     </section>
 
