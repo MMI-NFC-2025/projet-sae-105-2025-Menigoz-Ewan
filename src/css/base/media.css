@@ -1530,3 +1530,720 @@
         height: 28px;
     }
 }
+
+/* Glossary Page */
+.glossary-hero {
+    background-color: #E8D7CC;
+    padding: 80px 24px 20px;
+}
+
+.glossary-hero__content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.glossary-hero__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2C2C2C;
+    margin: 0;
+}
+
+.glossary-intro {
+    background-color: #E8D7CC;
+    padding: 20px 24px 40px;
+}
+
+.glossary-intro__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.glossary-intro__description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2C2C2C;
+    margin: 0 0 16px 0;
+}
+
+.glossary-intro__note {
+    background-color: rgba(201, 152, 114, 0.2);
+    padding: 12px 16px;
+    border-radius: 8px;
+}
+
+.glossary-intro__note-text {
+    font-size: 14px;
+    color: #2C2C2C;
+    margin: 0;
+    text-align: center;
+}
+
+.glossary-terms {
+    background-color: #E8D7CC;
+    padding: 0 24px 80px;
+}
+
+.glossary-terms__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.glossary-terms__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.glossary-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.glossary-term-btn {
+    background-color: #F5EDE6;
+    border: none;
+    border-radius: 12px;
+    padding: 18px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    font-size: 16px;
+    font-weight: 600;
+    color: #2C2C2C;
+    text-align: left;
+}
+
+.glossary-term-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.glossary-term-btn.active {
+    background-color: #D4A384;
+    color: #FFF;
+}
+
+.glossary-term-btn.active .glossary-term-btn__icon {
+    transform: rotate(180deg);
+}
+
+.glossary-term-btn__icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-left: 12px;
+    transition: transform 0.3s ease;
+}
+
+.glossary-item__definition {
+    background-color: #D4A384;
+    color: #FFF;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+    border-radius: 0 0 12px 12px;
+    margin-top: -4px;
+    display: none;
+}
+
+.glossary-item__definition.active {
+    display: block;
+}
+
+@media (max-width: 480px) {
+    .glossary-hero {
+        padding: 60px 16px 16px;
+    }
+
+    .glossary-hero__title {
+        font-size: 28px;
+    }
+
+    .glossary-intro {
+        padding: 16px 16px 32px;
+    }
+
+    .glossary-intro__description {
+        font-size: 14px;
+    }
+
+    .glossary-intro__note-text {
+        font-size: 13px;
+    }
+
+    .glossary-terms {
+        padding: 0 16px 60px;
+    }
+
+    .glossary-term-btn {
+        padding: 16px 18px;
+        font-size: 15px;
+    }
+
+    .glossary-item__definition {
+        padding: 16px;
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 769px) {
+    .glossary-hero {
+        padding: 100px 40px 30px;
+    }
+
+    .glossary-hero__title {
+        font-size: 42px;
+    }
+
+    .glossary-intro {
+        padding: 30px 40px 50px;
+    }
+
+    .glossary-intro__container {
+        max-width: 900px;
+    }
+
+    .glossary-intro__description {
+        font-size: 18px;
+        margin: 0 0 20px 0;
+    }
+
+    .glossary-intro__note {
+        padding: 14px 20px;
+    }
+
+    .glossary-intro__note-text {
+        font-size: 15px;
+    }
+
+    .glossary-terms {
+        padding: 0 40px 100px;
+    }
+
+    .glossary-terms__container {
+        max-width: 900px;
+    }
+
+    .glossary-terms__grid {
+        gap: 16px;
+    }
+
+    .glossary-term-btn {
+        padding: 20px 24px;
+        font-size: 18px;
+    }
+
+    .glossary-term-btn__icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    .glossary-item__definition {
+        padding: 24px;
+        font-size: 16px;
+    }
+}
+/* Contacts Page */
+.contacts-hero {
+    background-color: #E8D7CC;
+    padding: 80px 24px 20px;
+}
+
+.contacts-hero__content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.contacts-hero__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2C2C2C;
+    margin: 0;
+}
+
+.contacts-intro {
+    background-color: #E8D7CC;
+    padding: 20px 24px 40px;
+}
+
+.contacts-intro__container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contacts-intro__description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #2C2C2C;
+    margin: 0 0 8px 0;
+    font-weight: 600;
+}
+
+.contacts-intro__subtitle {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #2C2C2C;
+    margin: 0;
+}
+
+.contacts-form {
+    background-color: #E8D7CC;
+    padding: 0 24px 80px;
+}
+
+.contacts-form__container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #FFF;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.contacts-form__header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.contacts-form__icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+}
+
+.contacts-form__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2C2C2C;
+    margin: 0;
+}
+
+/* Form Styles */
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form__label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2C2C2C;
+}
+
+.form__input,
+.form__textarea {
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 14px;
+    font-family: inherit;
+    color: #2C2C2C;
+    background-color: #F9F9F9;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form__input:focus,
+.form__textarea:focus {
+    outline: none;
+    border-color: #0066CC;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.1);
+}
+
+.form__textarea {
+    resize: vertical;
+    min-height: 140px;
+}
+
+.form__submit {
+    background-color: #0066CC;
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.form__submit:hover {
+    background-color: #0052A3;
+    transform: translateY(-2px);
+}
+
+.form__submit:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+    .contacts-hero {
+        padding: 60px 16px 16px;
+    }
+
+    .contacts-hero__title {
+        font-size: 28px;
+    }
+
+    .contacts-intro {
+        padding: 16px 16px 32px;
+    }
+
+    .contacts-intro__description {
+        font-size: 14px;
+    }
+
+    .contacts-intro__subtitle {
+        font-size: 13px;
+    }
+
+    .contacts-form {
+        padding: 0 16px 60px;
+    }
+
+    .contacts-form__container {
+        padding: 20px;
+    }
+
+    .contacts-form__header {
+        margin-bottom: 20px;
+    }
+
+    .contacts-form__title {
+        font-size: 18px;
+    }
+
+    .form {
+        gap: 16px;
+    }
+
+    .form__label {
+        font-size: 13px;
+    }
+
+    .form__input,
+    .form__textarea {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .form__textarea {
+        min-height: 120px;
+    }
+
+    .form__submit {
+        padding: 14px 20px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 769px) {
+    .contacts-hero {
+        padding: 100px 40px 30px;
+    }
+
+    .contacts-hero__title {
+        font-size: 42px;
+    }
+
+    .contacts-intro {
+        padding: 30px 40px 50px;
+    }
+
+    .contacts-intro__container {
+        max-width: 900px;
+    }
+
+    .contacts-intro__description {
+        font-size: 18px;
+        margin: 0 0 10px 0;
+    }
+
+    .contacts-intro__subtitle {
+        font-size: 15px;
+    }
+
+    .contacts-form {
+        padding: 0 40px 100px;
+    }
+
+    .contacts-form__container {
+        max-width: 900px;
+        padding: 40px;
+    }
+
+    .contacts-form__header {
+        margin-bottom: 40px;
+    }
+
+    .contacts-form__icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .contacts-form__title {
+        font-size: 24px;
+    }
+
+    .form {
+        gap: 24px;
+    }
+
+    .form__label {
+        font-size: 15px;
+    }
+
+    .form__input,
+    .form__textarea {
+        padding: 14px 18px;
+        font-size: 15px;
+    }
+
+    .form__textarea {
+        min-height: 160px;
+    }
+
+    .form__submit {
+        padding: 18px 30px;
+        font-size: 17px;
+        margin-top: 15px;
+    }
+}
+
+/* About Page */
+.apropos-hero {
+    background-color: #E8D7CC;
+    padding: 80px 24px 20px;
+}
+
+.apropos-hero__content {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.apropos-hero__title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #2C2C2C;
+    margin: 0;
+}
+
+.apropos-project {
+    background-color: #E8D7CC;
+    padding: 40px 24px;
+    position: relative;
+}
+
+.apropos-project__container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.apropos-project__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2C2C2C;
+    margin: 0 0 24px 0;
+}
+
+.apropos-project__bg-image {
+    display: none;
+}
+
+.apropos-project__card {
+    background-color: #FFF;
+    border-radius: 16px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.apropos-project__text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #2C2C2C;
+    margin: 0;
+}
+
+.apropos-mission {
+    background-color: #E8D7CC;
+    padding: 40px 24px 80px;
+}
+
+.apropos-mission__container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.apropos-mission__title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2C2C2C;
+    margin: 0 0 24px 0;
+}
+
+.apropos-mission__bg-image {
+    display: none;
+}
+
+.apropos-mission__grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.mission-card {
+    background-color: #FFF;
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.mission-card__title {
+    font-size: 18px;
+    font-weight: 700;
+    color: #2C2C2C;
+    margin: 0;
+}
+
+.mission-card__text {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #2C2C2C;
+    margin: 0;
+}
+
+@media (max-width: 480px) {
+    .apropos-hero {
+        padding: 60px 16px 16px;
+    }
+
+    .apropos-hero__title {
+        font-size: 28px;
+    }
+
+    .apropos-project {
+        padding: 32px 16px;
+    }
+
+    .apropos-project__title {
+        font-size: 20px;
+        margin: 0 0 20px 0;
+    }
+
+    .apropos-project__card {
+        padding: 20px;
+        gap: 12px;
+    }
+
+    .apropos-project__text {
+        font-size: 14px;
+    }
+
+    .apropos-mission {
+        padding: 32px 16px 60px;
+    }
+
+    .apropos-mission__title {
+        font-size: 20px;
+        margin: 0 0 20px 0;
+    }
+
+    .apropos-mission__grid {
+        gap: 16px;
+    }
+
+    .mission-card {
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .mission-card__title {
+        font-size: 16px;
+    }
+
+    .mission-card__text {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 769px) {
+    .apropos-hero {
+        padding: 100px 40px 30px;
+    }
+
+    .apropos-hero__title {
+        font-size: 42px;
+    }
+
+    .apropos-project {
+        padding: 60px 40px;
+    }
+
+    .apropos-project__container {
+        max-width: 900px;
+    }
+
+    .apropos-project__title {
+        font-size: 28px;
+        margin: 0 0 30px 0;
+    }
+
+    .apropos-project__card {
+        padding: 40px;
+        gap: 20px;
+    }
+
+    .apropos-project__text {
+        font-size: 16px;
+    }
+
+    .apropos-mission {
+        padding: 60px 40px 100px;
+    }
+
+    .apropos-mission__container {
+        max-width: 900px;
+    }
+
+    .apropos-mission__title {
+        font-size: 28px;
+        margin: 0 0 30px 0;
+    }
+
+    .apropos-mission__grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    .mission-card {
+        padding: 30px;
+        gap: 16px;
+    }
+
+    .mission-card__title {
+        font-size: 20px;
+    }
+
+    .mission-card__text {
+        font-size: 16px;
+    }
+}

@@ -43,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     initCarousels();
+    initGlossary();
 });
 
 function initCarousels() {
@@ -168,6 +169,37 @@ function initCarousels() {
 
         if (nextBtn) {
             nextBtn.addEventListener('click', () => goToSlide(currentIndex + 1));
+        }
+    });
+}
+
+function initGlossary() {
+    const glossaryItems = document.querySelectorAll('.glossary-item');
+
+    glossaryItems.forEach((item) => {
+        const btn = item.querySelector('.glossary-term-btn');
+        const definition = item.querySelector('.glossary-item__definition');
+
+        if (btn && definition) {
+            btn.addEventListener('click', () => {
+                const isActive = definition.classList.contains('active');
+
+                // Fermer tous les autres accordéons
+                glossaryItems.forEach((otherItem) => {
+                    const otherBtn = otherItem.querySelector('.glossary-term-btn');
+                    const otherDef = otherItem.querySelector('.glossary-item__definition');
+                    if (otherBtn && otherDef) {
+                        otherBtn.classList.remove('active');
+                        otherDef.classList.remove('active');
+                    }
+                });
+
+                // Toggle celui-ci
+                if (!isActive) {
+                    btn.classList.add('active');
+                    definition.classList.add('active');
+                }
+            });
         }
     });
 }
