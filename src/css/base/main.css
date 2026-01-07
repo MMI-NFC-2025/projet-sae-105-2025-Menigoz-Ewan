@@ -932,8 +932,7 @@ a {
     margin: 0;
     line-height: 1.2;
     text-shadow: 0.3vw 0.3vw 1vw rgba(0, 0, 0, 0.4);
-    max-width: 55%;
-    word-break: break-word;
+    max-width: 100%;
 }
 
 /* Page Content */
@@ -1247,7 +1246,7 @@ a {
     flex-direction: column;
     gap: 3vh;
     position: relative;
-    padding-top: 4vh;
+    padding-top: 10vh;
 }
 
 .book-context__title {
